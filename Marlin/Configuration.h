@@ -678,11 +678,11 @@
 #define Z_DRIVER_TYPE  TMC2130
 //#define X2_DRIVER_TYPE A4988
 //#define Y2_DRIVER_TYPE A4988
-//#define Z2_DRIVER_TYPE A4988
+#define Z2_DRIVER_TYPE TMC2130
 //#define Z3_DRIVER_TYPE A4988
 //#define Z4_DRIVER_TYPE A4988
 #define E0_DRIVER_TYPE LV8729
-//#define E1_DRIVER_TYPE A4988
+//#define E1_DRIVER_TYPE TMC2130
 //#define E2_DRIVER_TYPE A4988
 //#define E3_DRIVER_TYPE A4988
 //#define E4_DRIVER_TYPE A4988
@@ -736,7 +736,7 @@
  * Override with M92
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 320, 320, 800, 825 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 320, 320, 1600, 413 }
 
 /**
  * Default Max Feed Rate (mm/s)
